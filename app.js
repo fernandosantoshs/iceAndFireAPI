@@ -16,11 +16,11 @@ mongoose.connect(process.env.DB_CONNECTION, () => { console.log('Conectado ao db
 app.get("/", (req, res) => {
     res.json({
       books: {
-        "bookById": "/books/:id",
-        "bookByISBN": "/books/isbn/:isbn",
+        "bookById": "https://iceAndFireAPI.fernandosantos2.repl.co/books/:id",
+        "bookByISBN": "https://iceAndFireAPI.fernandosantos2.repl.co/books/isbn/:isbn",
     },
-      characters: "/characters",
-      povCharacters: "/povcharacters",
+      characters: "https://iceAndFireAPI.fernandosantos2.repl.co/characters",
+      povCharacters: "https://iceAndFireAPI.fernandosantos2.repl.co/povcharacters",
     });
   });
 
