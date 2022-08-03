@@ -11,7 +11,8 @@ const Book = mongoose.model("books", {
     mediaType: String,
     released: Date,
     characters: [String],
-    povCharacters: [String]
+    povCharacters: [String],
+    bookCover: String
 });
 
 module.exports = Book;
